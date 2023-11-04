@@ -1,0 +1,99 @@
+.banner .container {
+  display: flex;
+  justify-content: space-between;
+}
+.container .img-1 {
+  width: 30%;
+  height: 360px;
+  position: relative;
+}
+.container .img-2 {
+  width: 68%;
+  height: 360px;
+  position: relative;
+}
+.container .img-1 img,
+.container .img-2 img {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.container .img-1:hover img,
+.container .img-1:hover span:nth-child(2) {
+  cursor: pointer;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+.container .img-1:hover span:nth-child(3) {
+  opacity: 1;
+}
+.container .img-1 span:nth-child(2) {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.container .img-1 span:nth-child(3) {
+  position: absolute;
+  top: 180px;
+  left: 90px;
+  font-size: 1.5rem;
+  padding: 5px 15px;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+  border-radius: 50px;
+  transition: 0.8s;
+  opacity: 0;
+}
+.container .img-1 span:nth-child(3):hover {
+  background-color: aliceblue;
+  color: #0f3460;
+  cursor: pointer;
+}
+.container .img-2:hover img,
+.container .img-2:hover span:nth-child(2) {
+  cursor: pointer;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+.container .img-2:hover span:nth-child(3) {
+  opacity: 1;
+}
+.container .img-2 span:nth-child(2) {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.container .img-2 span:nth-child(3) {
+  position: absolute;
+  top: 180px;
+  left: 320px;
+  font-size: 1.5rem;
+  padding: 5px 15px;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+  border-radius: 50px;
+  transition: 0.8s;
+  opacity: 0;
+}
+.container .img-2 span:nth-child(3):hover {
+  background-color: aliceblue;
+  color: #0f3460;
+  cursor: pointer;
+}
