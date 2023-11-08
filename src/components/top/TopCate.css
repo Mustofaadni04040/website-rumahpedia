@@ -27,3 +27,8 @@
   color: #000;
   right: 0;
 }
+@media screen and (max-width: 576px) {
+  .topCat .nametop {
+    display: none;
+  }
+}

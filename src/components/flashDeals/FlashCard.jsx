@@ -44,6 +44,12 @@ export default function FlashCard({ productItems, addToCart, onToggleModal }) {
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
+  // Menerapkan konfigurasi berdasarkan lebar layar
+  if (window.innerWidth <= 576) {
+    settings.slidesToShow = 3;
+  } else {
+    settings.slidesToShow = 4;
+  }
   return (
     <>
       <Slider {...settings}>

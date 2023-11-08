@@ -10,6 +10,12 @@ export default function TopCart() {
     slidesToScroll: 1,
     autoplay: true,
   };
+
+  if (window.innerWidth <= 576) {
+    settings.slidesToShow = 2;
+  } else {
+    settings.slidesToShow = 3;
+  }
   return (
     <>
       <Slider {...settings}>

@@ -4,7 +4,12 @@ import PropTypes from "prop-types";
 import "./Cart.css";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
-export default function Cart({ cartItem, addToCart, decreaseQty }) {
+export default function Cart({
+  cartItem,
+  addToCart,
+  decreaseQty,
+  onDeleteItem,
+}) {
   const totalPrice = cartItem.reduce(
     (price, item) => price + item.qty * item.price,
     0
@@ -36,7 +41,12 @@ export default function Cart({ cartItem, addToCart, decreaseQty }) {
                     </h4>
                     <div className="cart-items-function">
                       <div className="removeCart">
-                        <button className="removeCart">HAPUS</button>
+                        <button
+                          className="removeCart"
+                          onClick={() => onDeleteItem(item.id)}
+                        >
+                          HAPUS
+                        </button>
                       </div>
                       <div className="cartControl d_flex">
                         <button
@@ -98,4 +108,5 @@ Cart.propTypes = {
   cartItem: PropTypes.array.isRequired,
   addToCart: PropTypes.func,
   decreaseQty: PropTypes.func,
+  onDeleteItem: PropTypes.func,
 };

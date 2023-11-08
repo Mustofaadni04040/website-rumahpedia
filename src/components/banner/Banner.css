@@ -97,3 +97,8 @@
   color: #0f3460;
   cursor: pointer;
 }
+@media screen and (max-width: 576px) {
+  .banner {
+    display: none;
+  }
+}

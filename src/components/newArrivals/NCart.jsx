@@ -16,7 +16,7 @@ export default function Cart() {
                 />
               </div>
               <h4>{item.name}</h4>
-              <span>
+              <span className="new-price">
                 {item.price.toLocaleString("id-ID", {
                   style: "currency",
                   currency: "IDR",

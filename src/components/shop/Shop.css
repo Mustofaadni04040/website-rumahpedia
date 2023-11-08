@@ -51,3 +51,11 @@
 .shop .product:hover {
   box-shadow: rgb(43 52 69 / 10%) 0 4px 16px;
 }
+@media screen and (max-width: 576px) {
+  .shop .contentWidth {
+    margin-left: 0;
+  }
+  .grid1 {
+    gap: 0;
+  }
+}

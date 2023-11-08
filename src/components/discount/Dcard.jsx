@@ -10,6 +10,11 @@ export default function Dcard() {
     slidesToScroll: 1,
     autoplay: true,
   };
+  if (window.innerWidth <= 576) {
+    settings.slidesToShow = 3;
+  } else {
+    settings.slidesToShow = 5;
+  }
   return (
     <>
       <Slider {...settings}>
@@ -23,7 +28,7 @@ export default function Dcard() {
                       src={item.cover}
                       alt={item.name}
                       width="100%"
-                      style={{ margin: "20px 0 20px 0" }}
+                      style={{ margin: "20px auto" }}
                     />
                   </div>
                   <h4>{item.name}</h4>

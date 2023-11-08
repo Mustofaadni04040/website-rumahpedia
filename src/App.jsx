@@ -6,12 +6,14 @@ import Pages from "./pages/pages";
 import Data from "./components/flashDeals/Fdata";
 import Sdata from "./components/shop/Sdata";
 import Cart from "./cart/Cart";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const { productItems } = Data;
   const { shopItems } = Sdata;
 
   const [cartItem, setCartItem] = useState([]);
+
   const addToCart = (product) => {
     const productExist = cartItem.find((item) => item.id === product.id);
     if (productExist) {
@@ -41,6 +43,10 @@ function App() {
       );
     }
   };
+
+  function handleDeleteItem(id) {
+    setCartItem(cartItem.filter((item) => item.id !== id));
+  }
   return (
     <>
       <Router>
@@ -58,9 +64,11 @@ function App() {
               cartItem={cartItem}
               addToCart={addToCart}
               decreaseQty={decreaseQty}
+              onDeleteItem={handleDeleteItem}
             />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </>
   );

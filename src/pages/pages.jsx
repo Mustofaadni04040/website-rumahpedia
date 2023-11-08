@@ -1,3 +1,4 @@
+import { useState } from "react";
 import FlashDeals from "../components/flashDeals/FlashDeals";
 import Home from "../components/mainpage/Home";
 import PropTypes from "prop-types";
@@ -6,8 +7,8 @@ import NewArrivals from "../components/newArrivals/NewArrivals";
 import Discount from "../components/discount/Discount";
 import Shop from "../components/shop/Shop";
 import Banner from "../components/banner/Banner";
-import { useState } from "react";
 import Modal from "../components/modal/Modal";
+import Wrapper from "../components/wrapper/Wrapper";
 
 export default function Pages({
   productItems,
@@ -36,6 +37,7 @@ export default function Pages({
       <Discount />
       <Shop shopItems={shopItems} addToCart={addToCart} />
       <Banner />
+      <Wrapper />
     </>
   );
 }

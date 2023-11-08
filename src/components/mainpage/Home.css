@@ -43,3 +43,37 @@
   width: 100%;
   height: 100%;
 }
+/* media queries */
+@media screen and (max-width: 576px) {
+  .home {
+    margin-top: 10px;
+  }
+  .homeSlide h1 {
+    font-size: 0.9rem;
+  }
+  .homeSlide p {
+    font-size: 0.7rem;
+    margin-left: 1.5px;
+  }
+  .homeSlide .box .left {
+    width: 60%;
+  }
+  .homeSlide .box .right {
+    width: 40%;
+  }
+  .homeSlide .box .right img {
+    width: 120px;
+  }
+  .homeSlide ul {
+    bottom: 0px;
+  }
+  .homeSlide ul li {
+    padding: 5px;
+  }
+  .homeSlide ul li button::before {
+    font-size: 0.7rem;
+    top: 0px;
+    left: -2px;
+  }
+}
+/* media queries */

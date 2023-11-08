@@ -7,7 +7,6 @@
 body {
   background-color: #ffffff;
   font-family: "Poppins", sans-serif;
-  height: 2000px;
 }
 .background {
   background-color: #f6f9fc;
@@ -258,5 +257,113 @@ button {
 .heading .heading-right .icon-caret {
   color: gray;
 }
-
 /* heading */
+/* media queries */
+@media screen and (max-width: 576px) {
+  .d_flex {
+    margin-bottom: 10px;
+  }
+  .background {
+    padding: 30px 0;
+  }
+  .category {
+    display: none;
+  }
+  .contentWidth {
+    width: 100%;
+  }
+  .top {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .btn-primary {
+    background-color: #fbd914;
+    margin-left: 1px;
+    padding: 10px 20px;
+    font-size: 0.7rem;
+  }
+  /* product card */
+  .heading {
+    align-items: center;
+  }
+  .heading .heading-left .icon-border {
+    font-size: 1rem;
+  }
+  .heading .heading-left h2 {
+    font-size: 1rem;
+  }
+  .heading .heading-right span,
+  .heading .heading-right a {
+    font-size: 1rem;
+  }
+  .heading h1 {
+    font-size: 1rem;
+  }
+  .heading .icon-bolt {
+    font-size: 1rem;
+  }
+  .product {
+    padding: 10px;
+    margin: 2px;
+  }
+  .product h3 {
+    font-size: 0.5rem;
+  }
+  .product .discount {
+    font-size: 0.4rem;
+    padding: 2px 5px;
+  }
+
+  .product .img-flashdeals {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .product .price h4 {
+    font-size: 0.4rem;
+  }
+  .product .rate {
+    font-size: 0.4rem;
+  }
+  .product .button {
+    display: flex;
+    align-items: center;
+  }
+  .product .button button {
+    font-size: 0.5rem;
+    width: 15px;
+    height: 15px;
+  }
+  .product .button .btn-3d {
+    margin-left: 5px;
+  }
+  .product-like {
+    font-size: 0.7rem;
+    top: 10px;
+    right: 10px;
+  }
+  /* product card */
+  /* ctrl-btn */
+  .control-btn .next,
+  .control-btn .prev {
+    font-size: 0.7rem;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+  /* ctrl-btn */
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+  .grid2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .discount .product .price h6 {
+    font-size: 0.5rem;
+  }
+  .discount .product .price span.price-discount {
+    font-size: 0.6rem;
+  }
+}
+/* media queries */

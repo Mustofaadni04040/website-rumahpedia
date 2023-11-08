@@ -8,8 +8,23 @@
 .newarrivals span {
   color: #0f3460;
   font-size: 1rem;
-  font-weight: 500;
 }
 .newarrivals .box img {
   border-radius: 10px;
+}
+@media screen and (max-width: 576px) {
+  .heading img {
+    width: 20px;
+    height: 20px;
+  }
+  .newarrivals h4 {
+    font-size: 0.6rem;
+  }
+  .newarrivals span.new-price {
+    font-size: 0.4rem;
+  }
+  .newarrivals .box img {
+    width: 90px;
+    height: 90px;
+  }
 }
