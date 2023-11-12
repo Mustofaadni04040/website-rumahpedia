@@ -1,35 +1,35 @@
 export default function Categories() {
   const data = [
     {
-      cateImg: "../../../src/assets/icons/category/icon-chair.png",
+      cateImg: "assets/icons/category/icon-chair.png",
       cateName: "Kursi Tamu",
     },
     {
-      cateImg: "../../../src/assets/icons/category/icon-ac.png",
+      cateImg: "assets/icons/category/icon-ac.png",
       cateName: "Air Conditioner",
     },
     {
-      cateImg: "../../../src/assets/icons/category/icon-sofa.png",
+      cateImg: "assets/icons/category/icon-sofa.png",
       cateName: "Sofa Nyaman Untuk Keluarga",
     },
     {
-      cateImg: "../../../src/assets/icons/category/icon-bed.png",
+      cateImg: "assets/icons/category/icon-bed.png",
       cateName: "Tempat Tidur",
     },
     {
-      cateImg: "../../../src/assets/icons/category/icon-lamp.png",
+      cateImg: "assets/icons/category/icon-lamp.png",
       cateName: "Lampu Ruang Tamu",
     },
     {
-      cateImg: "../../../src/assets/icons/category/icon-tvtable.png",
+      cateImg: "assets/icons/category/icon-tvtable.png",
       cateName: "Meja TV",
     },
     {
-      cateImg: "../../../src/assets/icons/category/icon-plant.png",
+      cateImg: "assets/icons/category/icon-plant.png",
       cateName: "Tanaman Hias",
     },
     {
-      cateImg: "../../../src/assets/icons/category/icon-cupboard.png",
+      cateImg: "assets/icons/category/icon-cupboard.png",
       cateName: "Lemari Kamar",
     },
   ];

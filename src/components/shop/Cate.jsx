@@ -1,27 +1,27 @@
 export default function Cate() {
   const data = [
     {
-      cateImg: "../../../src/assets/images/logoBrands/logo1.png",
+      cateImg: "assets/images/logoBrands/logo1.png",
       cateName: "Cosmos",
     },
     {
-      cateImg: "../../../src/assets/images/logoBrands/logo2.png",
+      cateImg: "assets/images/logoBrands/logo2.png",
       cateName: "Nippont Paint",
     },
     {
-      cateImg: "../../../src/assets/images/logoBrands/logo3.png",
+      cateImg: "assets/images/logoBrands/logo3.png",
       cateName: "Central",
     },
     {
-      cateImg: "../../../src/assets/images/logoBrands/logo4.png",
+      cateImg: "assets/images/logoBrands/logo4.png",
       cateName: "Inoac",
     },
     {
-      cateImg: "../../../src/assets/images/logoBrands/logo5.png",
+      cateImg: "assets/images/logoBrands/logo5.png",
       cateName: "Miyako",
     },
     {
-      cateImg: "../../../src/assets/images/logoBrands/logo6.png",
+      cateImg: "assets/images/logoBrands/logo6.png",
       cateName: "Philips",
     },
   ];

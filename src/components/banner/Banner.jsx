@@ -6,16 +6,13 @@ export default function Banner() {
       <section className="banner background">
         <div className="container">
           <div className="img-1">
-            <img
-              src="../../../src/assets/images/banner/banner1.jpg"
-              alt="banner-1"
-            />
+            <img src="assets/images/banner/banner1.jpg" alt="banner-1" />
             <span>DISKON 30%</span>
             <span>Beli Sekarang</span>
           </div>
           <div className="img-2">
             <img
-              src="../../../src/assets/images/banner/banner2.jpg"
+              src="assets/images/banner/banner2.jpg"
               alt="banner-2"
               width="100%"
               height="100%"
