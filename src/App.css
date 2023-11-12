@@ -365,5 +365,9 @@ button {
   .discount .product .price span.price-discount {
     font-size: 0.6rem;
   }
+  .discount .product .box .img img {
+    width: 70px;
+    height: 50px;
+  }
 }
 /* media queries */
